@@ -1,3 +1,55 @@
-.works{
-    background-color: lightgreen;
+@import "../../global.scss";
+
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 50px;
+  }
+
+  ul {
+    margin: 10px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+
+    li {
+      font-size: 15px;
+      margin-right: 50px;
+      padding: 7px;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &.active {
+        background-color: $mainColor;
+        color: white;
+      }
+    }
+  }
+
+  .container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+
+    .item {
+      height: 250px;
+      width: 500px;
+      border: 1px solid lightblue;
+      border-radius: 4px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .item:nth-of-type(1){
+        grid-column: 1/span 2;
+    }
+  }
 }
