@@ -1,54 +1,6 @@
 @import "../../global.scss";
 
-.portfolio{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  h1 {
-    font-size: 50px;
-  }
-
-  ul {
-    margin: 10px;
-    padding: 0px;
-    list-style: none;
-    display: flex;
-
-    li {
-      font-size: 15px;
-      margin-right: 50px;
-      padding: 7px;
-      border-radius: 10px;
-      cursor: pointer;
-
-      &.active {
-        background-color: $mainColor;
-        color: white;
-      }
-    }
-  }
-
-  .container {
-    width: 70%;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-
-    .item {
-      border: 1px solid rgb(54, 54, 54);
-      border-radius: 4px;
-      display: flex;
-      justify-content: space-between;
-      padding: 0px;
-
-      img {
-        height: 100%;
-        width: 40%;
-        object-fit: cover;
-      }
-    }
-  }
+#about{
+  text-align: center;
 }
 

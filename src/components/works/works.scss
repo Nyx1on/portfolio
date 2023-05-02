@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-.works {
+.works{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,25 +31,24 @@
 
   .container {
     width: 70%;
+    text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 10px;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
 
     .item {
-      height: 250px;
-      width: 500px;
-      border: 1px solid lightblue;
+      border: 1px solid rgb(54, 54, 54);
       border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px;
 
       img {
         height: 100%;
-        width: 100%;
+        width: 40%;
         object-fit: cover;
       }
     }
-
-    .item:nth-of-type(1){
-        grid-column: 1/span 2;
-    }
   }
 }
+

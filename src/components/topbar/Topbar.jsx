@@ -17,6 +17,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </div>
         </div>
         <div className="right">
+        <a href="assets/Nirnay_Behera.pdf" className="btn" target="_blank"rel="no opener no referrer">Resume</a>
           <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
