@@ -1,80 +1,75 @@
-.intro{
-    background-color: white;
+@import "../../global.scss";
+
+#hero {
+    min-height: 100vh;
+    height: 100vh;
     display: flex;
-    background-image: "assets/pattern.svg";
-
-    .left{
-        flex: 0.5;
-        overflow: hidden;
-
-        .imageContainer{
-            width: 750px;
-            height: 750px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            float: right;
-            overflow: hidden;
-            
-            img{
-                height: auto;
-                width: auto;
-                scale: 130%;
-                position: relative;
-                top: -30px;
-            }
-        }
+    align-items: center;
+    border-bottom: 0px;
+    background: $white-color;
+    font-weight: 400;
+    color: $dark-blue-text;
+    padding: 0rem 5.6rem;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  
+    // Set position sticky so the jumbotron stays fixed while you scroll.
+    // position: sticky;
+  
+    // If you want to set a background image on the hero section, uncomment these with your custom image
+  
+    /* background: url("/src/assets/[your-image].png");
+    background-position: center;
+    background-size: cover; */
+  
+    @include respond(phone) {
+      padding: 0rem $default-font-size;
     }
+  
+    .hero-title {
+      font-size: 5.6rem;
+      font-weight: 700;
+      margin-bottom: 3.2rem;
+      text-align: left;
 
-    .right{
-        flex: 0.5;
-        position: relative;
-
-        .wrapper{
-            width: 100%;
-            height: 100%;
-            padding-left: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            h1{
-                font-size: 70px;
-                margin: 10px 0;
-            }
-
-            h2{
-                font-size: 40px;
-            }
-
-            h3{
-                font-size: 35px;
-                display: flex;
-                
-                span{
-                    color: crimson;
-                    padding-left: 5px;
-                }
-            }
-        }
-
-        a{
-            position: absolute;
-            bottom: 10px;
-            left: 40%;
-
-            img{
-                width: 50px;
-                animation: arrowBlink 2s infinite;
-            }
-            
-            @keyframes arrowBlink {
-                100%{
-                    opacity: 20%;
-                }
-                
-            }
-        }
+      .typewriter{
+        color: $secondary-color;
+      }
+  
+      @include respond(tab-land) {
+        font-size: 4rem;
+      }
+      @include respond(tab-port) {
+        font-size: 3.6rem;
+        text-align: center;
+      }
+      @include respond(phone) {
+        font-size: 3.5rem;
+        line-height: 1.5;
+      }
+      @include respond(phone-xs) {
+        font-size: 2.8rem;
+      }
     }
-}
+  
+    .hero-cta {
+      display: flex;
+  
+      @include respond(tab-port) {
+        justify-content: center;
+      }
+  
+      & a {
+        font-size: 2.4rem;
+  
+        @include respond(phone) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  

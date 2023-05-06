@@ -1,6 +1,6 @@
 import Contacts from "./components/contacts/Contacts"
 import Intro from "./components/intro/Intro"
-import Portfolio from "./components/portfolio/Portfolio"
+import About from "./components/about/About"
 import Testimonials from "./components/testimonials/Testimonials"
 import Topbar from "./components/topbar/Topbar"
 import Works from "./components/works/Works"
@@ -17,7 +17,7 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
-        <Portfolio/>
+        <About/>
         <Works/>
         <Testimonials/>
         <Contacts/>

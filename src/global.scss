@@ -1,1 +1,16 @@
-$mainColor:#15023a;
+@import "~bootstrap/scss/bootstrap";
+
+@import "../public/styles/mixins.scss";
+@import "../public/styles/helpers.scss";
+@import "../public/styles/variables.scss";
+
+@import "../public/styles/base.scss";
+@import "../public/styles/typography.scss";
+
+@import "../public/styles/sections.scss";
+@import "../public/styles/footer.scss";
+
+@import "../public/styles/buttons.scss";
+
+
+
