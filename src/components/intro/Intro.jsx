@@ -13,16 +13,24 @@ export default function Intro() {
         <div className="wrapper">
           <h2>Hi there, I'm</h2>
           <h1>Nirnay Behera</h1>
-          <h3><span><Typewriter
-              onInit={(typewriter) => {
-                typewriter.typeString("Designer :)")
-                .pauseFor(2000)
-                .deleteAll()
-                .typeString("Full Stack Developer")
-                .start();
-              }}
-            />
-          </span>
+          <h3>
+            <span>
+              <Typewriter
+                options={{
+                  loop: true,
+                }}
+                onInit={(typewriter) => {
+                  typewriter.loop = true;
+                  typewriter
+                    .typeString("Designer :)")
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString("Full Stack Developer")
+                    .pauseFor(2000)
+                    .start();
+                }}
+              />
+            </span>
           </h3>
         </div>
         <a href="#portfolio">

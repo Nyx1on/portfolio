@@ -1,14 +1,15 @@
 .intro{
     background-color: white;
     display: flex;
+    background-image: "assets/pattern.svg";
 
     .left{
         flex: 0.5;
         overflow: hidden;
 
         .imageContainer{
-            width: 700px;
-            height: 700px;
+            width: 750px;
+            height: 750px;
             border-radius: 50%;
             display: flex;
             align-items: center;

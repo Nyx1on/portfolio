@@ -3,7 +3,7 @@ import "./works.scss";
 export default function Works() {
   return (
     <div className="works" id="works">
-      <h1>Projects</h1>
+      <h1>Some Things I've built..</h1>
       <ul>
         <li className="active">Featured</li>
         <li>All apps</li>
