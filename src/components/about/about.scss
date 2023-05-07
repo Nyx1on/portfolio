@@ -5,13 +5,13 @@
   background-image: linear-gradient(
     135deg,
     $primary-color 0%,
-    $secondary-color 100%
+    $secondary-color 90%
   );
   color: $white-color;
   height: 100%;
   border-top: 0px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  -webkit-clip-path: polygon(100% 0, 97% 46%, 88% 84%, 57% 93%, 25% 89%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 97% 46%, 82% 78%, 55% 87%, 26% 86%, 0 100%, 0 0);
   padding-bottom: 10%;
 
   .container{
