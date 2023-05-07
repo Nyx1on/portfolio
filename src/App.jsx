@@ -19,7 +19,6 @@ function App() {
         <Intro/>
         <About/>
         <Works/>
-        <Testimonials/>
         <Contacts/>
       </div>
     </div>

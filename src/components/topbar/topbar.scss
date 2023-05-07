@@ -9,6 +9,11 @@
   z-index: 3;
   transition: all 1s ease;
 
+  @include respond(phone){
+    width: 100%;
+    overflow-y: hidden;
+  }
+
   .wrapper {
     padding: 10px 30px;
     display: flex;
@@ -20,17 +25,27 @@
       align-items: center;
 
       .logo {
-        font-size: 40px;
+        font-size: 3.2rem;
         font-weight: 700;
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
       }
 
+      @include respond(phone){
+        font-size: 0.5rem;
+        text-align: center;
+        margin: 0;
+      }
+
       .itemContainer {
         display: flex;
         align-items: center;
         margin-right: 30px;
+
+        @include respond(phone){
+          display: none;
+        }
 
         .icons {
           font-size: 18px;
@@ -54,6 +69,10 @@
         color: inherit;
         transition: all 0.1s ease;
         border-color: inherit;
+
+        @include respond(phone){
+          display: none;
+        }
       }
 
       .hamburger {

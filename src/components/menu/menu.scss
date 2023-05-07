@@ -16,6 +16,11 @@
 
   &.active {
     right: 0;
+
+    @include respond(phone){
+      width: 100%;
+    }
+    
   }
 
   ul {
