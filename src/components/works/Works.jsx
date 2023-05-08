@@ -1,14 +1,28 @@
 import "./works.scss";
 import Fade from "react-reveal/Fade";
 import Carousel from "react-bootstrap/Carousel";
+import { Tilt } from "react-tilt";
 
 export default function Works() {
+  const defaultOptions = {
+    reverse: false, // reverse the tilt direction
+    max: 35, // max tilt rotation (degrees)
+    perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
+    scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
+    speed: 1000, // Speed of the enter/exit transition
+    transition: true, // Set a transition on enter/exit.
+    axis: null, // What axis should be disabled. Can be X or Y.
+    reset: true, // If the tilt effect has to be reset on exit.
+    easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+  };
   return (
     <Fade>
       <section id="projects">
         <div className="container">
           <div className="project-wrapper">
-            <h2 className="section-title dark-blue-text">Somethings I've built ...</h2>
+            <h2 className="section-title dark-blue-text">
+              Somethings I've built ...
+            </h2>
             <Carousel variant="dark" controls={false} interval={5000}>
               <Carousel.Item>
                 <div className="row">
@@ -48,24 +62,27 @@ export default function Works() {
                       </a>
                     </div>
                   </div>
+
                   <div className="col-lg-8 col-sm-12">
-                    <div className="project-wrapper__image load-hidden">
-                      <a rel="noreferrer" href="#!" target="_blank">
-                        <div
-                          data-tilt
-                          data-tilt-max="4"
-                          data-tilt-glare="true"
-                          data-tilt-max-glare="0.5"
-                          className="thumbnail rounded js-tilt"
-                        >
-                          <img
-                            alt="Project"
-                            className="img-fluid"
-                            src="assets/pathfinding_v.png"
-                          />
-                        </div>
-                      </a>
-                    </div>
+                    <Tilt options={defaultOptions}>
+                      <div className="project-wrapper__image load-hidden">
+                        <a rel="noreferrer" href="#!" target="_blank">
+                          <div
+                            data-tilt
+                            data-tilt-max="4"
+                            data-tilt-glare="true"
+                            data-tilt-max-glare="0.5"
+                            className="thumbnail rounded js-tilt"
+                          >
+                            <img
+                              alt="Project"
+                              className="img-fluid"
+                              src="assets/pathfinding_v.png"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                    </Tilt>
                   </div>
                 </div>
               </Carousel.Item>
