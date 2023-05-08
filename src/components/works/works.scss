@@ -15,7 +15,9 @@
     }
 
     .row {
+      padding-top: 4rem;
       margin-bottom: 8rem;
+      overflow-y: hidden;
 
       @include respond(phone) {
         margin-bottom: 4rem;

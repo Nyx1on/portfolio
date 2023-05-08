@@ -8,7 +8,7 @@ export default function Works() {
     reverse: false, // reverse the tilt direction
     max: 35, // max tilt rotation (degrees)
     perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
-    scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
+    scale: 1, // 2 = 200%, 1.5 = 150%, etc..
     speed: 1000, // Speed of the enter/exit transition
     transition: true, // Set a transition on enter/exit.
     axis: null, // What axis should be disabled. Can be X or Y.
@@ -62,28 +62,25 @@ export default function Works() {
                       </a>
                     </div>
                   </div>
-
-                  <div className="col-lg-8 col-sm-12">
-                    <Tilt options={defaultOptions}>
-                      <div className="project-wrapper__image load-hidden">
-                        <a rel="noreferrer" href="#!" target="_blank">
-                          <div
-                            data-tilt
-                            data-tilt-max="4"
-                            data-tilt-glare="true"
-                            data-tilt-max-glare="0.5"
-                            className="thumbnail rounded js-tilt"
-                          >
-                            <img
-                              alt="Project"
-                              className="img-fluid"
-                              src="assets/pathfinding_v.png"
-                            />
-                          </div>
-                        </a>
-                      </div>
-                    </Tilt>
-                  </div>
+                  <Tilt options={defaultOptions} className="col-lg-8 col-sm-12">
+                    <div className="project-wrapper__image load-hidden">
+                      <a rel="noreferrer" href="#!" target="_blank">
+                        <div
+                          data-tilt
+                          data-tilt-max="4"
+                          data-tilt-glare="true"
+                          data-tilt-max-glare="0.5"
+                          className="thumbnail rounded js-tilt"
+                        >
+                          <img
+                            alt="Project"
+                            className="img-fluid"
+                            src="assets/pathfinding_v.png"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </Tilt>
                 </div>
               </Carousel.Item>
               <Carousel.Item>
@@ -124,7 +121,7 @@ export default function Works() {
                       </a>
                     </div>
                   </div>
-                  <div className="col-lg-8 col-sm-12">
+                  <Tilt options={defaultOptions} className="col-lg-8 col-sm-12">
                     <div className="project-wrapper__image load-hidden">
                       <a rel="noreferrer" href="#!" target="_blank">
                         <div
@@ -142,7 +139,7 @@ export default function Works() {
                         </div>
                       </a>
                     </div>
-                  </div>
+                  </Tilt>
                 </div>
               </Carousel.Item>
               <Carousel.Item>
@@ -183,7 +180,7 @@ export default function Works() {
                       </a>
                     </div>
                   </div>
-                  <div className="col-lg-8 col-sm-12">
+                  <Tilt options={defaultOptions} className="col-lg-8 col-sm-12">
                     <div className="project-wrapper__image load-hidden">
                       <a rel="noreferrer" href="#!" target="_blank">
                         <div
@@ -201,7 +198,7 @@ export default function Works() {
                         </div>
                       </a>
                     </div>
-                  </div>
+                  </Tilt>
                 </div>
               </Carousel.Item>
             </Carousel>
