@@ -18,7 +18,6 @@ export default function Intro() {
                     loop: true,
                   }}
                   onInit={(typewriter) => {
-                    typewriter.loop = true;
                     typewriter
                       .pauseFor(2000)
                       .typeString("Designer :)")
