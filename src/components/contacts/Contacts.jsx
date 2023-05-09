@@ -7,7 +7,7 @@ export default function Contacts() {
       <Fade>
         <section id="contact">
           <div className="container">
-            <h2 className="section-title">Contact</h2>
+            <h2 className="section-title">Contact Me</h2>
             <div className="contact-wrapper load-hidden">
               <form>
                 <input
@@ -15,7 +15,7 @@ export default function Contacts() {
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
-                  placeholder="Enter email"
+                  placeholder="Enter your email"
                 />
                 <textarea
                   name=""

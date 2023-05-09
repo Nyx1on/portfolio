@@ -3,6 +3,7 @@
 #projects {
   background-color: $white-color;
   color: $dark-blue-text;
+  overflow-y: hidden;
 
   @include respond(tab-land) {
     margin-top: 0;
