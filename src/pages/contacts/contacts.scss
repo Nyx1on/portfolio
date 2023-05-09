@@ -49,6 +49,7 @@
         height: 300px;
         font-size: 20px;
         margin-bottom: 1.5rem;
+        resize: none;
 
         @include respond(phone) {
           width: 200px;

@@ -25,6 +25,8 @@
   }
 
   .about-wrapper {
+    overflow-y: hidden;
+
     @include respond(phone) {
       padding-bottom: 5rem;
     }
@@ -80,6 +82,11 @@
           }
         }
       }
+    }
+
+    .grid-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
