@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Works() {
   const defaultOptions = {
-    reverse: false, // reverse the tilt direction
+    reverse: true, // reverse the tilt direction
     max: 30, // max tilt rotation (degrees)
     perspective: 2000, // Transform perspective, the lower the more extreme the tilt gets.
     scale: 1, // 2 = 200%, 1.5 = 150%, etc..
@@ -37,21 +37,21 @@ export default function Works() {
                   <div className="row">
                     <div className="col-lg-4 col-sm-12">
                       <div className="project-wrapper__text load-hidden">
-                        <h3 className="project-wrapper__text-title">
+                        <h3 className="project-wrapper__text-title text-color-main">
                           Pathfinding Vizualiser
                         </h3>
                         <div>
                           <p className="mb-4">
-                            Describe the project - Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt
-                            in culpa qui officia deserunt mollit anim id est
-                            laborum.
+                            A web-based visualizer for Dijkstra's algorithm, a
+                            popular shortest path algorithm, written in
+                            JavaScript and HTML/CSS. This project allows users
+                            to visualize the process of finding the shortest
+                            path between two points on a grid, using Dijkstra's
+                            algorithm. Users can also create walls to obstruct
+                            the pathfinding algorithm, simply by clicking on
+                            grid cells. This is a great tool for anyone
+                            interested in learning about pathfinding algorithms
+                            or looking to improve their problem-solving skills.
                           </p>
                         </div>
                         <a
@@ -96,7 +96,7 @@ export default function Works() {
                   <div className="row">
                     <div className="col-lg-4 col-sm-12">
                       <div className="project-wrapper__text load-hidden">
-                        <h3 className="project-wrapper__text-title">
+                        <h3 className="project-wrapper__text-title text-color-main">
                           Task Management Software
                         </h3>
                         <div>
@@ -155,7 +155,7 @@ export default function Works() {
                   <div className="row">
                     <div className="col-lg-4 col-sm-12">
                       <div className="project-wrapper__text load-hidden">
-                        <h3 className="project-wrapper__text-title">
+                        <h3 className="project-wrapper__text-title text-color-main">
                           Crowd Funding App
                         </h3>
                         <div>

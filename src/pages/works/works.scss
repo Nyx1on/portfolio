@@ -40,6 +40,10 @@
         margin-bottom: 1.8rem;
         font-size: $mid-font-size;
 
+        &:hover{
+          transform: none;
+        }
+
         @include respond(phone) {
           font-size: 2rem;
         }

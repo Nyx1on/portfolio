@@ -6,6 +6,7 @@ import Works from "./pages/works/Works"
 import "./app.scss"
 import { useState } from "react"
 import Menu from "./components/menu/Menu"
+import SideBar from "./components/side bar/SideBar"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <SideBar/>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
