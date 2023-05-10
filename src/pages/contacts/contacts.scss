@@ -1,6 +1,7 @@
 @import "../../global.scss";
 
 .contact {
+  min-height: 100vh;
   background-image: url("../../../public/assets/wave3.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,7 +24,13 @@
 
   @include respond(phone) {
     background-size: 300%;
-    background-position: 0px -5rem;
+    background-size: cover;
+    background-position: 0px bottom;
+  }
+
+  .thank-you-message {
+    font-size: 3rem;
+    margin-bottom: 40rem;
   }
 
   .contact-wrapper {
@@ -36,6 +43,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+      margin-bottom: 10rem;
 
       input {
         width: 400px;
@@ -44,6 +52,15 @@
         margin-bottom: 1rem;
         border-radius: 4px;
         box-sizing: border-box;
+
+        &:hover {
+          border-color: #d00b61;
+        }
+
+        &:focus {
+          border-color: #d00b61;
+          box-shadow: 1px 1px 3px #d00b61;
+        }
 
         @include respond(phone) {
           width: 250px;
@@ -61,6 +78,15 @@
         outline: none;
         resize: none;
 
+        &:hover {
+          border-color: #d00b61;
+        }
+
+        &:focus {
+          border-color: #d00b61;
+          box-shadow: 1px 1px 3px #d00b61;
+        }
+
         @include respond(phone) {
           width: 250px;
           height: 200px;
@@ -71,8 +97,6 @@
         font-family: "Montserrat", sans-serif;
         font-size: 16px;
         background-color: transparent;
-        margin: 1rem;
-        padding: 0.8rem 2rem;
       }
     }
 
@@ -91,10 +115,38 @@
   }
 
   footer {
-    margin-top: 8rem;
-    .container-fluid{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+
+    .container-fluid {
       font-family: "Montserrat";
-      color: white;
+      color: rgb(221, 221, 221);
+      p{
+        font-size: 14px;
+        padding: 0 0;
+      }
+
+      a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: font-weight 0.3s ease-in ease-in-out;
+        font-weight: 400;
+
+        .icons{
+          padding-left: 10px;
+          font-size: 4rem;
+        }
+
+        &:hover{
+          color: rgb(255, 255, 255);
+          font-weight: 600;
+        }
+      }
+    }
+
+    @include respond(phone) {
+      padding: 0 1rem;
     }
   }
 }

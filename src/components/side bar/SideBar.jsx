@@ -16,7 +16,7 @@ export default function SideBar() {
               target="_blank"
               className="text-color-main"
             >
-              <GitHubIcon className="icons text-color-main" />
+              <GitHubIcon className="icons" />
             </a>
           </li>
           <li>
