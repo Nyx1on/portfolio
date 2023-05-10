@@ -4,7 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { Tilt } from "react-tilt";
 import Typewriter from "typewriter-effect";
 
-export default function Works() {
+export default function Works({menuOpen}) {
   const defaultOptions = {
     reverse: true, // reverse the tilt direction
     max: 30, // max tilt rotation (degrees)
@@ -18,7 +18,7 @@ export default function Works() {
   };
   return (
     <Fade>
-      <section id="projects">
+      <section className={"projects " + (menuOpen && "menu-active")}>
         <div className="container">
           <div className="project-wrapper">
             <h2 className="section-title dark-blue-text">

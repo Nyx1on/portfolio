@@ -1,20 +1,21 @@
 @import "../../global.scss";
 
-#about {
-  background-color: $primary-color;
-  background-image: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 90%
-  );
-  color: $white-color;
+.about {
+  background-image: url("../../../public/assets/wave.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
   height: 100%;
   border-top: 0px;
-  -webkit-clip-path: polygon(100% 0, 97% 46%, 88% 84%, 57% 93%, 25% 89%, 0 100%, 0 0);
-  clip-path: polygon(100% 0, 97% 46%, 82% 78%, 55% 87%, 26% 86%, 0 100%, 0 0);
   padding-bottom: 10%;
+  overflow-y: hidden;
+  transition: filter 1s ease;
 
-  .container{
+  &.menu-active{
+    filter: blur(3px) brightness(95%);
+  }
+
+  .container {
     overflow-y: hidden;
   }
 
@@ -22,6 +23,12 @@
     height: 100%;
     -webkit-clip-path: none;
     clip-path: none;
+  }
+
+  @include respond(phone){
+    background-size: 700%;
+    background-position: 0rem 1rem;
+    overflow-y: auto;
   }
 
   .about-wrapper {
@@ -57,7 +64,7 @@
 
       &-text {
         text-align: left;
-
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
         @include respond(tab-port) {
           text-align: left;
         }
@@ -84,10 +91,9 @@
       }
     }
 
-    .grid-container{
+    .grid-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
   }
 }
-

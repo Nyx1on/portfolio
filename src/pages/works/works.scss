@@ -1,8 +1,13 @@
 @import "../../global.scss";
 
-#projects {
+.projects {
   background-color: $white-color;
   color: $dark-blue-text;
+  transition: filter 1s ease;
+
+  &.menu-active{
+    filter: blur(3px) brightness(95%);
+  }
 
   @include respond(tab-land) {
     margin-top: 0;

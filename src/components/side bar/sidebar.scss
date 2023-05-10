@@ -5,7 +5,7 @@
   position: fixed;
   bottom: 0px;
   right: 80px;
-  z-index: 10;
+  z-index: 2;
 
   @include respond(phone) {
     display: none;
@@ -22,13 +22,14 @@
 
         .icons {
           font-size: 3.5rem;
-          color: $primary-color;
+          color: #070433;
           width: 50px;
-        }
-        :hover {
-          color: rgb(4, 222, 255);
-          transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-          transform: scale(1.1);
+          transition: transform 0.3s ease;
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
     }
@@ -36,9 +37,9 @@
   ul::after {
     content: "";
     display: block;
-    width: 1.6px;
-    height: 100px;
-    margin: 0px auto;
-    background-color: rgb(32, 32, 32);
+    width: 1.8px;
+    height: 120px;
+    margin: 5px auto;
+    background-color: rgb(0, 0, 0);
   }
 }

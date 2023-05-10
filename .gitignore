@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# api keys and other service ids
+/src/emailJsConfig.js
+
 # testing
 /coverage
 
@@ -21,3 +24,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+

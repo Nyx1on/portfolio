@@ -1,6 +1,7 @@
 @import "../../global.scss";
 
 .menu {
+  font-family: 'Roboto';
   width: 300px;
   height: 100vh;
   background-color: $primary-color;
@@ -33,15 +34,19 @@
     width: 60%;
 
     li {
+      width: 180px;
+      height: 50px;
       margin-bottom: 25px;
       a {
         font-size: inherit;
         color: inherit;
         text-decoration: none;
+        transition: font-size 0.5s ease;
       }
 
       &:hover {
         font-weight: 500;
+        font-size: 33px;
       }
     }
   }

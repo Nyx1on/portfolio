@@ -2,7 +2,7 @@
 
 .topbar {
   width: 100%;
-  height: 80px;
+  height: 70px;
   background-color: white;
   color: $primary-color;
   position: fixed;
@@ -89,7 +89,7 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: $primary-color;
+          background-color: #0f0c2d;
           transform-origin: left;
           transition: all 0.2s ease;
         }
@@ -98,7 +98,7 @@
   }
 
   &.active {
-    background-color: $primary-color;
+    background-color: #0f0c2d;
     color: white;
 
     .hamburger {

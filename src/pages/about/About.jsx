@@ -2,7 +2,7 @@ import "./about.scss";
 import Fade from "react-reveal/Fade";
 import { Tilt } from "react-tilt";
 
-export default function About() {
+export default function About({ menuOpen }) {
   const defaultOptions = {
     reverse: true, // reverse the tilt direction
     max: 30, // max tilt rotation (degrees)
@@ -15,8 +15,8 @@ export default function About() {
     easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
   };
   return (
-    <Fade>
-      <section id="about">
+    <section className={"about " + (menuOpen && "menu-active")}>
+      <Fade>
         <div className="container">
           <Fade right>
             <h2 className="section-title load-hidden">About me</h2>
@@ -40,12 +40,18 @@ export default function About() {
                     Hello, my name is Nirnay. I'm a software developer with
                     experience in building full-stack web applications. I'm
                     dedicated to staying up-to-date with the latest industry
-                    trends and constantly improving my skills. I
-                    have experience in{" "}
-                    <strong>HTML, CSS, Javascript, Solidity, Python, C++</strong> ,
-                    libraries/frameworks such as
-                    <strong> ReactJs, Redux, ExpressJs, NodeJs, REST API, GraphQL, Sass </strong>etc. and database
-                    systems like <strong>MongoDB, NoSQL, PostgreSQL</strong>
+                    trends and constantly improving my skills. I have experience
+                    in{" "}
+                    <strong>
+                      HTML, CSS, Javascript, Solidity, Python, C++
+                    </strong>{" "}
+                    , libraries/frameworks such as
+                    <strong>
+                      {" "}
+                      ReactJs, Redux, ExpressJs, NodeJs, REST API, GraphQL, Sass{" "}
+                    </strong>
+                    etc. and database systems like{" "}
+                    <strong>MongoDB, NoSQL, PostgreSQL</strong>
                   </p>
                   <p className="about-wrapper__info-text">
                     I've also recently started contributing to open source
@@ -69,7 +75,7 @@ export default function About() {
             </div>
           </Fade>
         </div>
-      </section>
-    </Fade>
+      </Fade>
+    </section>
   );
 }
