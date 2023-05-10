@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import emailjs from "@emailjs/browser";
 import {
-  My_SERVICE_ID,
+  MY_SERVICE_ID,
   MY_TEMPLATE_ID,
   MY_PUBLIC_KEY,
 } from "../../emailJsConfig";
@@ -17,7 +17,7 @@ export default function Contacts({ menuOpen }) {
     e.preventDefault();
 
     emailjs
-      .sendForm(My_SERVICE_ID, MY_TEMPLATE_ID, form.current, MY_PUBLIC_KEY)
+      .sendForm(MY_SERVICE_ID, MY_TEMPLATE_ID, form.current, MY_PUBLIC_KEY)
       .then(
         (result) => {
           console.log(result.text);
