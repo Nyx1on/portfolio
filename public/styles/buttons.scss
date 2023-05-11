@@ -106,22 +106,3 @@
   color: #272727;
 }
 
-.down-key {
-  position: absolute;
-  bottom: 0vh;
-  width: 70px;
-  height: 70px;
-  text-align: center;
-  margin: 0px auto;
-
-  .arrow {
-    font-size: 50px;
-    opacity: 70%;
-    color: rgb(255, 255, 255);
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-      font-size: 55px;
-    }
-  }
-}

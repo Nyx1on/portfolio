@@ -6,10 +6,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px -200px;
-  padding: 8rem 0 10rem 0;
   color: $dark-blue-text;
   overflow-y: hidden;
   transition: filter 1s ease;
+  padding: 0px auto 0px auto;
+  
 
   &.menu-active {
     filter: blur(3px) brightness(95%);
@@ -43,7 +44,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      margin-bottom: 10rem;
+      margin-bottom: 5rem;
 
       input {
         width: 400px;
@@ -52,6 +53,7 @@
         margin-bottom: 1rem;
         border-radius: 4px;
         box-sizing: border-box;
+        opacity: 80%;
 
         &:hover {
           border-color: #d00b61;
@@ -63,8 +65,8 @@
         }
 
         @include respond(phone) {
-          width: 250px;
-          height: 30px;
+          width: 30rem;
+          height: 3rem;
         }
       }
 
@@ -77,6 +79,7 @@
         box-sizing: border-box;
         outline: none;
         resize: none;
+        opacity: 80%;
 
         &:hover {
           border-color: #d00b61;
@@ -88,8 +91,8 @@
         }
 
         @include respond(phone) {
-          width: 250px;
-          height: 200px;
+          width: 30rem;
+          height: 25rem;
         }
       }
 
