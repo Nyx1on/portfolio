@@ -3,13 +3,8 @@ import "./contacts.scss";
 import Fade from "react-reveal/Fade";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import emailjs from "@emailjs/browser";
-import {
-  MY_SERVICE_ID,
-  MY_TEMPLATE_ID,
-  MY_PUBLIC_KEY,
-} from "../../emailJsConfig";
 
-export default function Contacts({ menuOpen }) {
+export default function Contacts({ menuOpen}) {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const form = useRef();
 
@@ -17,7 +12,7 @@ export default function Contacts({ menuOpen }) {
     e.preventDefault();
 
     emailjs
-      .sendForm(MY_SERVICE_ID, MY_TEMPLATE_ID, form.current, MY_PUBLIC_KEY)
+      .sendForm(process.env.REACT_APP_SERVICE_ID,process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
       .then(
         (result) => {
           console.log(result.text);

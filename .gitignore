@@ -8,6 +8,8 @@
 # api keys and other service ids
 /src/emailJsConfig.js
 
+/.env
+
 # testing
 /coverage
 
