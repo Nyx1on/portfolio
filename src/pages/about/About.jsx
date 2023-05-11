@@ -15,7 +15,7 @@ export default function About({ menuOpen }) {
     easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
   };
   return (
-    <section className={"about " + (menuOpen && "menu-active")}>
+    <section className={"about " + (menuOpen && "menu-active")} id="about">
       <Fade>
         <div className="container">
           <Fade right>

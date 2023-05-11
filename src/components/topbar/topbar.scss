@@ -13,6 +13,7 @@
   @include respond(phone){
     width: 100%;
     overflow-y: hidden;
+    height: 80px;
   }
 
   .wrapper {

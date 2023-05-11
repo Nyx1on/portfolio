@@ -11042,6 +11042,12 @@ section {
   overflow-y: hidden;
   transition: filter 1s ease;
 }
+@media (max-width: 37.5em) {
+  .about {
+    background-size: cover;
+    margin-top: -1.2rem;
+  }
+}
 .about.menu-active {
   filter: blur(3px) brightness(95%);
 }

@@ -11045,6 +11045,7 @@ section {
   .topbar {
     width: 100%;
     overflow-y: hidden;
+    height: 80px;
   }
 }
 .topbar .wrapper {

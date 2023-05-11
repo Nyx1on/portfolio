@@ -2,6 +2,7 @@ import "./intro.scss";
 import Typewriter from "typewriter-effect";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 export default function Intro({ menuOpen }) {
   return (
@@ -46,6 +47,7 @@ export default function Intro({ menuOpen }) {
             </Fade>
           </section>
         </Slide>
+        <a href="#about" className="down-key"><KeyboardArrowDownIcon className="arrow"/></a>
       </div>
     </>
   );

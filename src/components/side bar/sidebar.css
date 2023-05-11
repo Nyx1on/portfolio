@@ -11040,7 +11040,8 @@ section {
 }
 @media (max-width: 37.5em) {
   .side-bar {
-    display: none;
+    width: 5rem;
+    right: 2rem;
   }
 }
 .side-bar ul {
@@ -11070,4 +11071,10 @@ section {
   height: 120px;
   margin: 5px auto;
   background-color: rgb(0, 0, 0);
+}
+@media (max-width: 37.5em) {
+  .side-bar ul::after {
+    height: 10rem;
+    background-color: transparent;
+  }
 }/*# sourceMappingURL=sidebar.css.map */

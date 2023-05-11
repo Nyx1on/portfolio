@@ -11,6 +11,11 @@
   overflow-y: hidden;
   transition: filter 1s ease;
 
+  @include respond(phone){
+    background-size: cover;
+    margin-top: -1.2rem;
+  }
+
   &.menu-active{
     filter: blur(3px) brightness(95%);
   }

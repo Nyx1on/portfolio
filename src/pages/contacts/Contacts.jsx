@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import emailjs from "@emailjs/browser";
 
-export default function Contacts({ menuOpen}) {
+export default function Contacts({ menuOpen }) {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const form = useRef();
 
@@ -27,10 +27,9 @@ export default function Contacts({ menuOpen}) {
   return (
     <>
       <Fade>
-        <section className={"contact " + (menuOpen && "menu-active")}>
+        <section className={"contact " + (menuOpen && "menu-active")} id="contacts">
           <div className="container">
             <h2 className="section-title">Contact Me</h2>
-
             <div className="contact-wrapper load-hidden">
               {isSubmitted ? (
                 <div className="thank-you-message">

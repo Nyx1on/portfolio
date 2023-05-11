@@ -18,7 +18,7 @@ export default function Works({menuOpen}) {
   };
   return (
     <Fade>
-      <section className={"projects " + (menuOpen && "menu-active")}>
+      <section className={"projects " + (menuOpen && "menu-active")} id="works">
         <div className="container">
           <div className="project-wrapper">
             <h2 className="section-title dark-blue-text">
@@ -38,7 +38,7 @@ export default function Works({menuOpen}) {
                     <div className="col-lg-4 col-sm-12">
                       <div className="project-wrapper__text load-hidden">
                         <h3 className="project-wrapper__text-title text-color-main">
-                          Pathfinding Vizualiser
+                          1. Pathfinding Vizualiser
                         </h3>
                         <div>
                           <p className="mb-4">
@@ -97,7 +97,7 @@ export default function Works({menuOpen}) {
                     <div className="col-lg-4 col-sm-12">
                       <div className="project-wrapper__text load-hidden">
                         <h3 className="project-wrapper__text-title text-color-main">
-                          Task Management Software
+                          2. Task Management Software
                         </h3>
                         <div>
                           <p className="mb-4">
@@ -156,7 +156,7 @@ export default function Works({menuOpen}) {
                     <div className="col-lg-4 col-sm-12">
                       <div className="project-wrapper__text load-hidden">
                         <h3 className="project-wrapper__text-title text-color-main">
-                          Crowd Funding App
+                          3. Crowd Funding App
                         </h3>
                         <div>
                           <p className="mb-4">
