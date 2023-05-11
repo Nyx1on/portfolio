@@ -1,4 +1,18 @@
+# Portfolio Website
+
+Welcome to my portfolio website! This is where I showcase my projects and skills to potential employers and clients. I built this website using HTML, CSS, and JavaScript.
+
+## Demo
+
+Here's a screenshot of the homepage:
+![image](https://github.com/Nyx1on/portfolio/assets/75667684/5936402f-33fa-4594-8a5c-283f1b702d41)
+
+## About me
+I'm a full-stack web developer. I specialize in React, Node.js, Sass and MongoDB, but I'm always learning new technologies and tools. If you're interested in working with me, feel free to contact me!
+
 # Getting Started with Create React App
+
+You can also view a live demo of the website [here](https://iamnyx1on.netlify.app)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
