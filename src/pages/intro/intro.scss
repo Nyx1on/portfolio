@@ -4,7 +4,7 @@
   background-image: url("../../../public/assets/wave2.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0px -250px;
+  background-position: bottom;
   min-height: 100vh;
   height: 100vh;
   display: flex;
@@ -38,6 +38,12 @@
     padding: 0rem $default-font-size;
     background-size: cover;
     background-position: 0px bottom;
+  }
+
+  @include respond(tab-land) {
+    background-image: url("../../../public/assets/wave-tab-2.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .hero-title {
