@@ -83,7 +83,7 @@ export default function Works({ menuOpen }) {
                         className="col-lg-8 col-sm-12"
                       >
                         <div className="project-wrapper__image load-hidden">
-                          <a rel="noreferrer" href="#!" target="_blank">
+                          <a rel="noreferrer" href="assets/pathfinding_v.png" target="_blank">
                             <div className="thumbnail rounded">
                               <img
                                 alt="Project"
@@ -142,7 +142,7 @@ export default function Works({ menuOpen }) {
                         className="col-lg-8 col-sm-12"
                       >
                         <div className="project-wrapper__image load-hidden">
-                          <a rel="noreferrer" href="#!" target="_blank">
+                          <a rel="noreferrer" href="assets/tms.png" target="_blank">
                             <div className="thumbnail rounded">
                               <img
                                 alt="Project"
@@ -201,7 +201,7 @@ export default function Works({ menuOpen }) {
                         className="col-lg-8 col-sm-12"
                       >
                         <div className="project-wrapper__image load-hidden">
-                          <a rel="noreferrer" href="#!" target="_blank">
+                          <a rel="noreferrer" href="assets/pathfinding_v3.png" target="_blank">
                             <div className="thumbnail rounded">
                               <img
                                 alt="Project"
