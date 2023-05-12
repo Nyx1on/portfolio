@@ -23,13 +23,14 @@
 
         .icons {
           font-size: 3.5rem;
-          color: #070433;
+          color: #0f0c2de3;
           width: 50px;
+          opacity: 90%;
           transition: transform 0.3s ease;
-          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
 
           &:hover {
-            transform: scale(1.1);
+            transform: scale(1.11);
+            color: $primary-color;
           }
         }
       }
@@ -40,10 +41,11 @@
     display: block;
     width: 1.8px;
     height: 120px;
-    margin: 5px auto;
-    background-color: rgb(0, 0, 0);
-    
-    @include respond(phone){
+    margin: 20px auto;
+    opacity: 90%;
+    background-color: $primary-color;
+
+    @include respond(phone) {
       height: 10rem;
       background-color: transparent;
     }
