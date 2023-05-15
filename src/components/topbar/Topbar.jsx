@@ -26,7 +26,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <div className="right">
               <Button
                 variant="outlined"
-                href="assets/dio.jpg"
+                href="assets/Nirnay_Behera.pdf"
                 target="_blank"
                 rel="no opener no referrer"
                 className="btn"

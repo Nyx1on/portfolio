@@ -68,7 +68,7 @@ export default function About({ menuOpen }) {
                         rel="noreferrer"
                         target="_blank"
                         className="cta-btn cta-btn--resume"
-                        href="assets/dio.jpg"
+                        href="assets/Nirnay_Behera.pdf"
                       >
                         View Resume
                       </a>
