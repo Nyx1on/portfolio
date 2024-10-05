@@ -43,7 +43,67 @@ export default function Works({ menuOpen }) {
                       <div className="col-lg-4 col-sm-12">
                         <div className="project-wrapper__text load-hidden">
                           <h3 className="project-wrapper__text-title text-color-main">
-                            1. Sentiment Analysis
+                            1. Snapify
+                          </h3>
+                          <div>
+                            <p className="mb-4">
+                              Snapify, a web application designed with
+                              photographers in mind. Snapify is the brainchild
+                              of a passionate photographer and technology
+                              enthusiast who saw a need for a platform that not
+                              only helps photographers tell compelling stories
+                              through their images but also fosters a thriving
+                              community of creative individuals.
+                            </p>
+                          </div>
+                          <a
+                            rel="noreferrer"
+                            target="_blank"
+                            className="cta-btn cta-btn--hero"
+                            href="#!"
+                          >
+                            See Live
+                          </a>
+                          <a
+                            rel="noreferrer"
+                            target="_blank"
+                            className="cta-btn text-color-main"
+                            href="https://github.com/Nyx1on/Snapify-application"
+                          >
+                            Source Code
+                          </a>
+                        </div>
+                      </div>
+                      <Tilt
+                        options={defaultOptions}
+                        className="col-lg-8 col-sm-12"
+                      >
+                        <div className="project-wrapper__image load-hidden">
+                          <a
+                            rel="noreferrer"
+                            href="assets/sean.png"
+                            target="_blank"
+                          >
+                            <div className="thumbnail rounded">
+                              <img
+                                alt="Project"
+                                className="img-fluid"
+                                src="assets/snapify.png"
+                              />
+                            </div>
+                          </a>
+                        </div>
+                      </Tilt>
+                    </div>
+                  </Fade>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Fade>
+                    <div className="row">
+                      <div className="col-lg-4 col-sm-12">
+                        <div className="project-wrapper__text load-hidden">
+                          <h3 className="project-wrapper__text-title text-color-main">
+                            2. Sentiment Analysis
                           </h3>
                           <div>
                             <p className="mb-4">
@@ -106,7 +166,7 @@ export default function Works({ menuOpen }) {
                       <div className="col-lg-4 col-sm-12">
                         <div className="project-wrapper__text load-hidden">
                           <h3 className="project-wrapper__text-title text-color-main">
-                            2. Creativai-2.0
+                            3. Creativai-2.0
                           </h3>
                           <div>
                             <p className="mb-4">
@@ -169,7 +229,7 @@ export default function Works({ menuOpen }) {
                       <div className="col-lg-4 col-sm-12">
                         <div className="project-wrapper__text load-hidden">
                           <h3 className="project-wrapper__text-title text-color-main">
-                            3. Pathfinding Vizualiser
+                            4. Pathfinding Vizualiser
                           </h3>
                           <div>
                             <p className="mb-4">
@@ -233,7 +293,7 @@ export default function Works({ menuOpen }) {
                       <div className="col-lg-4 col-sm-12">
                         <div className="project-wrapper__text load-hidden">
                           <h3 className="project-wrapper__text-title text-color-main">
-                            4. Task Management Software
+                            5. Task Management Software
                           </h3>
                           <div>
                             <p className="mb-4">
@@ -296,7 +356,7 @@ export default function Works({ menuOpen }) {
                       <div className="col-lg-4 col-sm-12">
                         <div className="project-wrapper__text load-hidden">
                           <h3 className="project-wrapper__text-title text-color-main">
-                            5. Crowd Funding App
+                            6. Crowd Funding App
                           </h3>
                           <div>
                             <p className="mb-4">
