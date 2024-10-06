@@ -39,29 +39,28 @@ export default function About({ menuOpen }) {
                 <div className="col-md-6 col-sm-12">
                   <div className="about-wrapper__info load-hidden">
                     <p className="about-wrapper__info-text">
-                      Hello, my name is Nirnay. I'm a software developer with
-                      experience in building full-stack web applications. I'm
-                      dedicated to staying up-to-date with the latest industry
-                      trends and constantly improving my skills. I have
-                      experience in{" "}
-                      <strong>
-                        HTML, CSS, Javascript, Solidity, Python, C++
-                      </strong>{" "}
-                      , libraries/frameworks such as
+                      Hello, my name is Nirnay and I'm a software developer
+                      having experience in full-stack web application building.
+                      Keeping updated with the latest trends of this industry is
+                      a sort of commitment and a way to ensure that my skills
+                      are always striving for excellence. I have experience in{" "}
+                      <strong>Java, Python, C++ Javascript, HTML, CSS</strong> ,
+                      libraries/frameworks such as
                       <strong>
                         {" "}
-                        ReactJs, Redux, ExpressJs, NodeJs, REST API, GraphQL,
-                        Sass{" "}
+                        NextJs, ReactJs, Springboot, ExpressJs, REST API,
+                        GraphQL, Django, Flask Sass{" "}
                       </strong>
                       etc. and database systems like{" "}
-                      <strong>MongoDB, NoSQL, PostgreSQL</strong>
+                      <strong>MongoDB, MsSQL, PostgreSQL</strong>
                     </p>
                     <p className="about-wrapper__info-text">
-                      I've also recently started contributing to open source
-                      projects. While I'm still learning, I'm grateful for the
-                      opportunity to collaborate with other developers and
-                      excited to continue growing as a developer and
-                      contributing to open source community in meaningful ways.
+                      I do, at my leisure, occasionally participate in
+                      open-source projects. It is a privilege as a learner to be
+                      able to work alongside some of the most talented
+                      developers out there and to be so excited to learn even
+                      more while contributing positively to the open-source
+                      community.
                     </p>
                     <span className="d-flex mt-3">
                       <a
@@ -80,7 +79,7 @@ export default function About({ menuOpen }) {
           </div>
         </Fade>
       </section>
-      <DownArrow nextPage="works" curPage="about-me"/>
+      <DownArrow nextPage="works" curPage="about-me" />
     </div>
   );
 }
